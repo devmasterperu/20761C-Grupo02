@@ -22,7 +22,7 @@ FROM SalesLT.Product;
 -- Step 4: Column Aliases
 -- Select and execute the following query to show the use of column aliases
 -- to label calculated columns in the SELECT clause
-SELECT SalesOrderNumber, PurchaseOrderNumber, CustomerID, YEAR(OrderDate) AS YearPurchased 
+SELECT SalesOrderNumber, PurchaseOrderNumber, CustomerID,OrderDate, YEAR(OrderDate) AS YearPurchased 
 FROM SalesLT.SalesOrderHeader
 
 

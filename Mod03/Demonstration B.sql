@@ -18,6 +18,11 @@ FROM SalesLT.Product;
 SELECT DISTINCT Color, Size 
 FROM SalesLT.Product;
 
+SELECT DISTINCT Color 
+FROM SalesLT.Product;
+
+SELECT DISTINCT Size 
+FROM SalesLT.Product;
 
 -- Step 4: Select Disctinct
 -- Select and execute the following query to show that DISTINCT across 

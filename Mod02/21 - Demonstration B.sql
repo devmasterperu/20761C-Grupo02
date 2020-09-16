@@ -11,14 +11,14 @@ GO
 -- Step 2: Querying a table	 
 -- Select and run the completed query to show results
 -- Point out that there are 8 rows returned
-SELECT	ProductID
+SELECT	ProductID             --PASO 05.
 		,UnitPrice
 		,SUM(OrderQty) as 'TotalOrdered'
-FROM SalesLT.SalesOrderDetail
-WHERE UnitPrice > 50
-GROUP BY ProductID, UnitPrice
-HAVING SUM(OrderQty) > 19
-ORDER BY TotalOrdered DESC;
+FROM SalesLT.SalesOrderDetail --PASO 01.
+WHERE UnitPrice > 50          --PASO 02.
+GROUP BY ProductID, UnitPrice --PASO 03.
+HAVING SUM(OrderQty) > 19     --PASO 04.
+ORDER BY TotalOrdered DESC;   --PASO 06.
 
 -- Step 3: Querying a table	 
 -- Select and run the partial query to show results
@@ -52,9 +52,9 @@ GROUP BY ProductID, UnitPrice;
 -- replaced with columns that are either in the GROUP BY expression
 -- or are aggregate functions (this will be explained further in Module 9)
 -- Point out that there are 107 rows returned
-SELECT	ProductID
-		,UnitPrice
-		,SUM(OrderQty) as 'TotalOrdered'
+SELECT	ProductID                        --CAMPO_GROUP_BY
+		,UnitPrice                       --CAMPO_GROUP_BY
+		,SUM(OrderQty) as 'TotalOrdered' --CAMPO_SUMARIZADO
 FROM SalesLT.SalesOrderDetail
 WHERE UnitPrice > 50
 GROUP BY ProductID, UnitPrice;

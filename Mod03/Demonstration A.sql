@@ -36,7 +36,7 @@ FROM SalesLT.customer;
 -- Step 6: Simple SELECT query with calculated column
 -- Select and execute the following query to manipulate columns from SalesLT.Product table. 
 -- Note the lack of name for the new calculated column.
-SELECT ProductID, Name, ListPrice, (ListPrice * 1.1)
+SELECT ProductID, Name, ListPrice, (ListPrice * 1.1) as NewListPrice
 FROM SalesLT.Product;
 
 
