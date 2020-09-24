@@ -1,0 +1,12 @@
+SELECT @@LANGUAGE;
+
+EXEC sp_helplanguage;
+
+EXEC sp_helplanguage Spanish;
+
+SET LANGUAGE <<LANGUAGE>>
+
+EXEC sp_configure 'default language', 2 ;
+GO
+RECONFIGURE ;
+GO
